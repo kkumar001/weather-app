@@ -7,7 +7,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/weather/:city" element={<Details />} />
-        <Route exact path="/statewisesummary" element={<Summary />} />
+        {/* <Route exact path="/statewisesummary" element={<Summary />} /> */}
       </Routes>
     </Router>
   )

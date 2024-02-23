@@ -53,13 +53,13 @@ const Home = () => {
   console.log(data);
 
   return (
-    <div className='w-full h-screen bg-blue-100'>
+    <div className='w-full h-screen bg-blue-200'>
       <Header />
-      <div className='w-full h-[300px] flex flex-col items-center justify-center p-4 gap-2 border-b-2 border-blue-700'>
+      <div className='w-full h-[300px] flex flex-col items-center justify-center p-4 gap-2'>
         <div className='text-3xl p-2 h-[50px] text-center font-semibold'>
           <h3 className='blue-gradient_text'>Recent Searches...</h3>
         </div>
-        <div className={`grid ${resultSearches.length > 0 ? 'grid-cols-2' : ''} w-[90%] text-center bg-blue-200 rounded-xl p-2 border-2 border-blue-700`}>
+        <div className={`grid ${resultSearches.length > 0 ? 'grid-cols-2' : ''} w-[90%] text-center bg-slate-50 rounded-xl p-2`}>
           {resultSearches.length > 0 ?
             <>
               <div>
@@ -82,7 +82,7 @@ const Home = () => {
           }
         </div>
       </div>
-      <div className='h-[calc(100vh-364px)] w-[100%] flex justify-center p-4 items-center'>
+      <div className='h-[calc(100vh-364px)] w-[100%] flex justify-center p-4 items-center bg-slate-50 rounded-t-3xl'>
         <Search onLocationChange={getLocation} />
       </div>
     </div>
