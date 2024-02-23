@@ -53,20 +53,20 @@ const Home = () => {
   console.log(data);
 
   return (
-    <div className='w-full h-screen bg-blue-200'>
+    <div className='w-full h-screen bg-blue-100 flex flex-col justify-between'>
       <Header />
-      <div className='w-full h-[300px] flex flex-col items-center justify-center p-4 gap-2'>
-        <div className='text-3xl p-2 h-[50px] text-center font-semibold'>
+      <div className='w-full h-auto flex flex-col items-center justify-center p-4 gap-2'>
+        <div className='text-3xl p-2 text-center font-semibold'>
           <h3 className='blue-gradient_text'>Recent Searches...</h3>
         </div>
-        <div className={`grid ${resultSearches.length > 0 ? 'grid-cols-2' : ''} w-[90%] text-center bg-slate-50 rounded-xl p-2`}>
+        <div className={`flex ${resultSearches.length > 0 ? 'justify-between' : ''} sm:w-[90%] w-[98%] text-center bg-slate-50 rounded-xl p-3`}>
           {resultSearches.length > 0 ?
             <>
               <div>
                 <h3 className="text-2xl font-semibold text-blue-700">Search</h3>
                 <ul className='text-xl font-medium'>
                   {recentSearches.map((search) => (
-                    <li>{search}</li>
+                    <li className='h-70px'>{search}</li>
                   ))}
                 </ul>
               </div>
@@ -82,7 +82,7 @@ const Home = () => {
           }
         </div>
       </div>
-      <div className='h-[calc(100vh-364px)] w-[100%] flex justify-center p-4 items-center bg-slate-50 rounded-t-3xl'>
+      <div className=' w-[100%] h-auto flex justify-center p-4 items-center bg-slate-50 rounded-t-3xl'>
         <Search onLocationChange={getLocation} />
       </div>
     </div>

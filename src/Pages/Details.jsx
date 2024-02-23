@@ -51,7 +51,7 @@ const Details = () => {
       <Header />
       {data ?
         <div className='w-full md:h-[calc(100vh-64px)] h-[1326px] flex flex-col gap-4 items-center justify-center'>
-          <h3 className='blue-gradient_text font-bold text-3xl uppercase'>{city} Weather Result</h3>
+          <h3 className='blue-gradient_text font-bold text-3xl md:mt-0 mt-10 uppercase'>{city} Weather Result</h3>
           <div className='md:w-[90%] w-[98%] md:h-[80%] h-[95%] rounded-2xl'>
             <div className='p-2 flex md:flex-row flex-col w-full h-full justify-center items-center'>
               <div className='flex flex-col md:w-[50%] w-[98%] md:h-full h-[48%] items-center justify-around'>
@@ -67,7 +67,7 @@ const Details = () => {
                                   data.weather[0].main.toLowerCase() === 'thunderstorm' ? thunderstorm :
                                     data.weather[0].main.toLowerCase() === 'mist' ? mist : ''
                     }
-                    alt="weather" className="w-[90%] h-[90%] rounded-xl" />
+                    alt="weather" className="w-[100%] h-[80%] hover:h-[90%] rounded-xl transition-all duration-300 ease-in-out" />
                 </div>
                 <div className='md:w-[95%] md:text-left text-center hover:font-semibold w-[98%] bg-slate-50 h-[45%] rounded-2xl py-2 px-4'>
                   <h6 className='text-center text-3xl blue-gradient_text'>Temperature</h6>

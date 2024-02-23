@@ -18,7 +18,7 @@ const Search = ({ onLocationChange }) => {
     console.log(location);
 
     return (
-        <div className='w-[90%] flex flex-col items-center h-[250px]'>
+        <div className='w-[90%] flex flex-col items-center h-[275px] my-4'>
            <h3 className='sm:text-4xl text-2xl text-center font-semibold blue-gradient_text'>Find Weather With Location</h3>
             <form action=""
                 className='sm:w-[500px] w-[100%] flex flex-col gap-7 mt-14 px-4'
