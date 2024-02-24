@@ -79,7 +79,7 @@ const Home = () => {
                   ))}
                 </ul>
               </div> </> :
-            <h3 className='text-2xl text-center w-full font-semibold text-blue-600'>No Data.</h3>
+            <h3 className='text-2xl text-center w-full font-semibold'>No Data</h3>
           }
         </div>
       </div>
